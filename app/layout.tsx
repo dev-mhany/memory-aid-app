@@ -33,7 +33,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              minHeight: 'calc(100vh - 120px)', // Adjust for header and footer height
+              minHeight: 'calc(100vh - 120px)',
               overflow: 'hidden',
               position: 'relative',
             }}

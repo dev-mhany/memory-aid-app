@@ -16,16 +16,15 @@ export default function Profile() {
       if (currentUser) {
         setUser(currentUser)
 
-        // Fetch patient information, including the last game stats
         const patientDocRef = doc(db, 'patients', currentUser.uid)
         const patientDoc = await getDoc(patientDocRef)
         if (patientDoc.exists()) {
           setPatientInfo(patientDoc.data())
         } else {
-          router.push('/patient') // Redirect to patient form if no data
+          router.push('/patient')
         }
       } else {
-        router.push('/') // Redirect to home if not signed in
+        router.push('/')
       }
     })
 

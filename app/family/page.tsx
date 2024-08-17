@@ -72,7 +72,7 @@ export default function Family() {
         member.id === editMemberId ? { ...newMember, id: editMemberId } : member
       )
     } else {
-      const newId = new Date().getTime().toString() // Generate a simple unique ID
+      const newId = new Date().getTime().toString()
       updatedFamilyMembers = [...familyMembers, { ...newMember, id: newId }]
     }
 

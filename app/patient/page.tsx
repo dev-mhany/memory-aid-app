@@ -6,7 +6,6 @@ import { doc, setDoc, getDoc } from 'firebase/firestore'
 import { signInWithPopup } from 'firebase/auth'
 import { useRouter } from 'next/navigation'
 
-// Define the PatientData type
 type PatientData = {
   name: string
   age: string
@@ -36,7 +35,7 @@ export default function Patient() {
         const patientDocRef = doc(db, 'patients', currentUser.uid)
         const patientDoc = await getDoc(patientDocRef)
         if (patientDoc.exists()) {
-          setFormData(patientDoc.data() as PatientData) // Type assertion here
+          setFormData(patientDoc.data() as PatientData)
           setIsExisting(true)
         }
       } else {

@@ -138,7 +138,6 @@ const GameBoard: React.FC = () => {
     return () => clearInterval(timer)
   }, [timerRunning])
 
-  // Shuffle cards only on the client side to prevent hydration errors
   useEffect(() => {
     setCardList(
       shuffle(initialCards).map((name, index) => ({

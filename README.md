@@ -1,7 +1,3 @@
-Here's an edited version of the README that includes instructions for installing with Yarn and a brief explanation of the site:
-
----
-
 # Memory Aid App
 
 This is a **Memory Aid App** built with [Next.js](https://nextjs.org/), designed to assist Alzheimer's patients and their families by providing tools for daily management, cognitive exercises, and information sharing. The app features memory games, daily task management, and patient profile management, aiming to make day-to-day life easier and more organized for patients and caregivers alike.
@@ -50,7 +46,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
----
-
-This version of the README provides clear instructions on how to get started with the project, including installation and running the development server, and offers a brief overview of the app's purpose and features.
